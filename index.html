@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KodNest Premium Build System – Job Notification Tracker</title>
+  <link rel="stylesheet" href="kodnest-design-system.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="app-shell__nav-wrapper">
+      <header class="app-nav" aria-label="Job Notification Tracker navigation">
+        <div class="app-nav__brand">Job Notification Tracker</div>
+        <button class="app-nav__toggle" type="button" aria-label="Toggle navigation">
+          <span class="app-nav__toggle-lines">
+            <span class="app-nav__toggle-line"></span>
+            <span class="app-nav__toggle-line"></span>
+            <span class="app-nav__toggle-line"></span>
+          </span>
+        </button>
+        <nav class="app-nav__links" aria-label="Primary">
+          <a href="/dashboard" class="app-nav__link" data-route-link>Dashboard</a>
+          <a href="/saved" class="app-nav__link" data-route-link>Saved</a>
+          <a href="/digest" class="app-nav__link" data-route-link>Digest</a>
+          <a href="/settings" class="app-nav__link" data-route-link>Settings</a>
+          <a href="/proof" class="app-nav__link" data-route-link>Proof</a>
+        </nav>
+      </header>
+    </div>
+
+    <main class="app-main">
+      <section class="app-page" aria-live="polite" data-page-container></section>
+    </main>
+  </div>
+
+  <script src="/jobs-data.js"></script>
+  <script src="/job-tracker-router.js"></script>
+</body>
+</html>
+

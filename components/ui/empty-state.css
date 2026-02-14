@@ -1,0 +1,42 @@
+/**
+ * KodNest Premium Build System
+ * Empty State Component
+ */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  text-align: center;
+  min-height: 300px;
+}
+
+.empty-state__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--space-md);
+  opacity: 0.3;
+}
+
+.empty-state__title {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-heading-md);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.empty-state__description {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body-relaxed);
+  color: var(--color-text-secondary);
+  max-width: var(--max-width-text);
+  margin-bottom: var(--space-md);
+}
+
+.empty-state__action {
+  margin-top: var(--space-sm);
+}

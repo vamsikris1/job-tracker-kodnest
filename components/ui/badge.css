@@ -1,0 +1,68 @@
+/**
+ * KodNest Premium Build System
+ * Badge Component
+ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px var(--space-xs);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+}
+
+.badge--success {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.badge--warning {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+}
+
+.badge--accent {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: rgba(139, 0, 0, 0.05);
+}
+
+.badge--neutral {
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.badge--muted {
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+  background-color: rgba(17, 17, 17, 0.02);
+}
+
+.badge--status-not-applied {
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+  background-color: rgba(17, 17, 17, 0.01);
+}
+
+.badge--status-applied {
+  border-color: #4267b2;
+  color: #4267b2;
+  background-color: rgba(66, 103, 178, 0.06);
+}
+
+.badge--status-rejected {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: rgba(139, 0, 0, 0.05);
+}
+
+.badge--status-selected {
+  border-color: var(--color-success);
+  color: var(--color-success);
+  background-color: rgba(17, 17, 17, 0.01);
+}

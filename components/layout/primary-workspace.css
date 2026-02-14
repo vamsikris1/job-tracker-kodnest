@@ -1,0 +1,15 @@
+/**
+ * KodNest Premium Build System
+ * Primary Workspace Component
+ */
+
+.primary-workspace {
+  width: var(--max-width-workspace);
+  padding: var(--space-lg);
+  background-color: var(--color-bg);
+  min-height: calc(100vh - 300px);
+}
+
+.primary-workspace__content {
+  max-width: 100%;
+}

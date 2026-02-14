@@ -1,0 +1,44 @@
+/**
+ * KodNest Premium Build System
+ * Error State Component
+ */
+
+.error-state {
+  padding: var(--space-md);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  background-color: rgba(139, 0, 0, 0.03);
+}
+
+.error-state__title {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.error-state__message {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body-relaxed);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.error-state__solution {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body-relaxed);
+  color: var(--color-text-secondary);
+}
+
+.error-state__solution-title {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.error-state__action {
+  margin-top: var(--space-md);
+}

@@ -1,0 +1,75 @@
+/**
+ * KodNest Premium Build System
+ * Button Components
+ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xs) var(--space-md);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary Button */
+.btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background-color: #6B0000;
+  border-color: #6B0000;
+}
+
+/* Secondary Button */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background-color: rgba(139, 0, 0, 0.05);
+}
+
+/* Tertiary Button */
+.btn--tertiary {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.btn--tertiary:hover:not(:disabled) {
+  background-color: rgba(17, 17, 17, 0.03);
+  border-color: var(--color-text-primary);
+}
+
+/* Button Sizes */
+.btn--sm {
+  padding: 6px var(--space-sm);
+  font-size: var(--font-size-small);
+}
+
+.btn--lg {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: var(--font-size-body-lg);
+}
+
+/* Full Width */
+.btn--full {
+  width: 100%;
+}

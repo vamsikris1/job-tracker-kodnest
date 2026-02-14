@@ -1,0 +1,55 @@
+/**
+ * KodNest Premium Build System
+ * Top Bar Component
+ */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  height: 64px;
+}
+
+.top-bar__project-name {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.top-bar__progress {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-small);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-normal);
+}
+
+.top-bar__status {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px var(--space-xs);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.top-bar__status--not-started {
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.top-bar__status--in-progress {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+}
+
+.top-bar__status--shipped {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}

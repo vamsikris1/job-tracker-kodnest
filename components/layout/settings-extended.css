@@ -1,0 +1,11 @@
+/**
+ * Additional layout helpers for settings slider and checkbox group
+ * (keeps consistent spacing with existing settings styles)
+ */
+
+.settings__modes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+

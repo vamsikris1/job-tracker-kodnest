@@ -1,0 +1,66 @@
+/**
+ * KodNest Premium Build System
+ * Secondary Panel Component
+ */
+
+.secondary-panel {
+  width: var(--max-width-panel);
+  padding: var(--space-lg);
+  background-color: var(--color-bg);
+  border-left: 1px solid var(--color-border);
+  min-height: calc(100vh - 300px);
+}
+
+.secondary-panel__section {
+  margin-bottom: var(--space-lg);
+}
+
+.secondary-panel__section:last-child {
+  margin-bottom: 0;
+}
+
+.secondary-panel__title {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.secondary-panel__text {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.prompt-box {
+  width: 100%;
+  padding: var(--space-sm);
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color var(--transition-base);
+}
+
+.prompt-box:focus {
+  border-color: var(--color-border-focus);
+  outline: none;
+}
+
+.prompt-box::placeholder {
+  color: var(--color-text-muted);
+}
+
+.secondary-panel__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}

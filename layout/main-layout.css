@@ -1,0 +1,23 @@
+/**
+ * KodNest Premium Build System
+ * Main Layout Structure
+ */
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.main-layout__content {
+  display: flex;
+  flex: 1;
+  padding-bottom: 80px; /* Space for proof footer */
+}
+
+.main-layout__workspace-container {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 200px);
+}

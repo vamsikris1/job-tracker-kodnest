@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodNest Premium Build System - Example</title>
+    <link rel="stylesheet" href="kodnest-design-system.css">
+</head>
+<body>
+    <div class="main-layout">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="top-bar__project-name">Project Alpha</div>
+            <div class="top-bar__progress">Step 2 / 5</div>
+            <div class="top-bar__status top-bar__status--in-progress">In Progress</div>
+        </div>
+
+        <!-- Context Header -->
+        <div class="context-header">
+            <h1 class="context-header__headline">Build Your Component</h1>
+            <p class="context-header__subtext">Configure the settings and generate your component code.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-layout__content">
+            <div class="main-layout__workspace-container">
+                <!-- Primary Workspace -->
+                <div class="primary-workspace">
+                    <div class="primary-workspace__content">
+                        <!-- Card Example -->
+                        <div class="card" style="margin-bottom: var(--space-md);">
+                            <div class="card__header">
+                                <h3 class="card__title">Component Configuration</h3>
+                                <p class="card__subtitle">Define your component properties</p>
+                            </div>
+                            <div class="card__body">
+                                <div class="input-group">
+                                    <label class="input-label">Component Name</label>
+                                    <input type="text" class="input" placeholder="Enter component name">
+                                    <span class="input-help">Use PascalCase naming convention</span>
+                                </div>
+                                <div class="input-group">
+                                    <label class="input-label">Description</label>
+                                    <textarea class="input" rows="3" placeholder="Describe what this component does"></textarea>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <button class="btn btn--primary">Generate Component</button>
+                            </div>
+                        </div>
+
+                        <!-- Empty State Example -->
+                        <div class="card">
+                            <div class="empty-state">
+                                <div class="empty-state__title">No Components Yet</div>
+                                <p class="empty-state__description">Start by creating your first component. Click the button below to begin.</p>
+                                <div class="empty-state__action">
+                                    <button class="btn btn--primary">Create Component</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Panel -->
+                <div class="secondary-panel">
+                    <div class="secondary-panel__section">
+                        <h3 class="secondary-panel__title">Step Explanation</h3>
+                        <p class="secondary-panel__text">Configure your component properties. The name should follow PascalCase convention, and the description helps clarify the component's purpose.</p>
+                    </div>
+
+                    <div class="secondary-panel__section">
+                        <h3 class="secondary-panel__title">Copyable Prompt</h3>
+                        <textarea class="prompt-box" readonly>Create a React component called UserProfile that displays user information including name, email, and avatar.</textarea>
+                    </div>
+
+                    <div class="secondary-panel__section">
+                        <div class="secondary-panel__actions">
+                            <button class="btn btn--secondary btn--full">Copy</button>
+                            <button class="btn btn--primary btn--full">Build in Lovable</button>
+                            <button class="btn btn--tertiary btn--full">It Worked</button>
+                            <button class="btn btn--tertiary btn--full">Error</button>
+                            <button class="btn btn--tertiary btn--full">Add Screenshot</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proof Footer -->
+        <div class="proof-footer">
+            <div class="proof-footer__checklist">
+                <div class="proof-footer__item">
+                    <input type="checkbox" class="proof-footer__checkbox" id="proof-ui">
+                    <label for="proof-ui" class="proof-footer__label">UI Built</label>
+                    <input type="text" class="proof-footer__input" placeholder="Add proof link">
+                </div>
+                <div class="proof-footer__item">
+                    <input type="checkbox" class="proof-footer__checkbox" id="proof-logic">
+                    <label for="proof-logic" class="proof-footer__label">Logic Working</label>
+                    <input type="text" class="proof-footer__input" placeholder="Add proof link">
+                </div>
+                <div class="proof-footer__item">
+                    <input type="checkbox" class="proof-footer__checkbox" id="proof-test">
+                    <label for="proof-test" class="proof-footer__label">Test Passed</label>
+                    <input type="text" class="proof-footer__input" placeholder="Add proof link">
+                </div>
+                <div class="proof-footer__item">
+                    <input type="checkbox" class="proof-footer__checkbox" id="proof-deployed">
+                    <label for="proof-deployed" class="proof-footer__label">Deployed</label>
+                    <input type="text" class="proof-footer__input" placeholder="Add proof link">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
